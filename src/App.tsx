@@ -91,12 +91,12 @@ const StudentFormComponent: React.FC = () => {
               rules={[
                 { required: true, message: "Please input the student ID!" },
                 {
-                  pattern: /^[A-Za-z0-9]{4,10}$/,
-                  message: "ID must be 4-10 alphanumeric characters!",
+                  pattern: /^[BMD][0-9]{7}$/,
+                  message: "ID must start with 'BMD' followed by exactly 7 digits!",
                 },
               ]}
             >
-              <Input placeholder="Enter student ID" id={"student_id"} />
+              <Input placeholder="Enter student ID" id={"student_id"} autoComplete="off"/>
             </Form.Item>
 
             <Form.Item
@@ -106,7 +106,7 @@ const StudentFormComponent: React.FC = () => {
                 { required: true, message: "Please input the first name!" },
               ]}
             >
-              <Input placeholder="Enter first name" id={"first_name"} />
+              <Input placeholder="Enter first name" id={"first_name"} autoComplete="off"/>
             </Form.Item>
 
             <Form.Item
@@ -116,7 +116,7 @@ const StudentFormComponent: React.FC = () => {
                 { required: true, message: "Please input the last name!" },
               ]}
             >
-              <Input placeholder="Enter last name" id={"last_name"} />
+              <Input placeholder="Enter last name" id={"last_name"} autoComplete="off"/>
             </Form.Item>
 
             <Form.Item
@@ -141,7 +141,7 @@ const StudentFormComponent: React.FC = () => {
                 },
               ]}
             >
-              <Input placeholder="Enter email" id={"email"} />
+              <Input placeholder="Enter email" id={"email"} autoComplete="off"/>
             </Form.Item>
 
             <Form.Item
@@ -150,12 +150,12 @@ const StudentFormComponent: React.FC = () => {
               rules={[
                 { required: true, message: "Please input your phone number!" },
                 {
-                  pattern: /^[0-9]{10}$/,
-                  message: "Phone number must be 10 digits!",
+                  pattern: /^[0]\d{9}$/,
+                  message: "Phone number must be exactly 10 digits and start with '0'!",
                 },
               ]}
             >
-              <Input placeholder="Enter phone number" id={"phone_number"} />
+              <Input placeholder="Enter phone number" id={"phone_number"} autoComplete="off"/>
             </Form.Item>
 
             <Form.Item

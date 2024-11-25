@@ -1,0 +1,276 @@
+{
+  "id": "427ae167-c1cf-40da-836d-51ae12761160",
+  "version": "2.0",
+  "name": "SE-67",
+  "url": "http://127.0.0.1:5173",
+  "tests": [{
+    "id": "8863cdc2-7743-462b-afca-bec348430035",
+    "name": "Success-case",
+    "commands": [{
+      "id": "80ad24c6-ece1-4e29-9615-0f3ef88ca8cf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3f65ee1-993c-499c-9a5e-b59063712478",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee5fdc8c-ea13-4b6a-95e5-8bb0d7da8de5",
+      "comment": "",
+      "command": "type",
+      "target": "id=student_id",
+      "targets": [
+        ["id=student_id", "id"],
+        ["css=#student_id", "css:finder"],
+        ["xpath=//input[@id='student_id']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "B5720651"
+    }, {
+      "id": "54526e3a-a076-4e3e-b2ec-7a9945943063",
+      "comment": "",
+      "command": "type",
+      "target": "id=first_name",
+      "targets": [
+        ["id=first_name", "id"],
+        ["css=#first_name", "css:finder"],
+        ["xpath=//input[@id='first_name']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sitthichai"
+    }, {
+      "id": "52eb06d4-df9f-4091-aa4a-ab8b4957282a",
+      "comment": "",
+      "command": "type",
+      "target": "id=last_name",
+      "targets": [
+        ["id=last_name", "id"],
+        ["css=#last_name", "css:finder"],
+        ["xpath=//input[@id='last_name']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Siriritthikulchai"
+    }, {
+      "id": "2d3b49b1-e563-49e8-ad24-27858e359da2",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div[5]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "xirb_01@hotmail.co.th"
+    }, {
+      "id": "664c93a7-a3d9-42d9-915c-9194b1acddcc",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone_number",
+      "targets": [
+        ["id=phone_number", "id"],
+        ["css=#phone_number", "css:finder"],
+        ["xpath=//input[@id='phone_number']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div[6]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "0899628451"
+    }, {
+      "id": "60318d33-2cae-4c04-9d01-49dad047dd6a",
+      "comment": "",
+      "command": "click",
+      "target": "id=gender",
+      "targets": [
+        ["id=gender", "id"],
+        ["css=#gender", "css:finder"],
+        ["xpath=//input[@id='gender']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div[4]/div/div[2]/div/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b4a91d1-2323-4160-adb4-8ebedaf35995",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item-option-active > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7dbf1f29-9ed1-4441-ad34-a26908194981",
+      "comment": "",
+      "command": "type",
+      "target": "id=avatar",
+      "targets": [],
+      "value": "/Users/riku/Documents/github/se-67-validation/testfile.jpeg"
+    }, {
+      "id": "4561d76c-5f42-4ce0-b37c-8e93393b26b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary > span",
+      "targets": [
+        ["css=.ant-btn-primary > span", "css:finder"],
+        ["xpath=//form[@id='student_form']/div[8]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be095e16-13be-4126-a54f-172eb0243eb9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-message-custom-content > span:nth-child(2)",
+      "targets": [
+        ["css=.ant-message-custom-content > span:nth-child(2)", "css:finder"],
+        ["xpath=//div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Form submitted successfully!')]", "xpath:innerText"]
+      ],
+      "value": "Form submitted successfully!"
+    }]
+  }, {
+    "id": "a8446171-6df6-4ba1-88e8-38f490029a9e",
+    "name": "fail-case",
+    "commands": [{
+      "id": "1192da3c-e121-4f7a-be0e-7eebde3bc8c9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "086893f4-6adc-4d54-8363-e03a9de9d603",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67c43f5c-2e5b-4e84-9189-28e1424d7f4e",
+      "comment": "",
+      "command": "type",
+      "target": "id=first_name",
+      "targets": [
+        ["id=first_name", "id"],
+        ["css=#first_name", "css:finder"],
+        ["xpath=//input[@id='first_name']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div[2]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Sitthichai"
+    }, {
+      "id": "9bb8f1d4-7dfb-4c30-9746-1fe20fb9e074",
+      "comment": "",
+      "command": "type",
+      "target": "id=last_name",
+      "targets": [
+        ["id=last_name", "id"],
+        ["css=#last_name", "css:finder"],
+        ["xpath=//input[@id='last_name']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div[3]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Siriritthikulchai"
+    }, {
+      "id": "0771b8b1-91b3-4772-a93e-979ca77336b0",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div[5]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "xirb_01@hotmail.co.th"
+    }, {
+      "id": "31907471-103f-4e79-b5dd-af11f8420aa4",
+      "comment": "",
+      "command": "type",
+      "target": "id=phone_number",
+      "targets": [
+        ["id=phone_number", "id"],
+        ["css=#phone_number", "css:finder"],
+        ["xpath=//input[@id='phone_number']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div[6]/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "0899628451"
+    }, {
+      "id": "134c9040-cac4-442f-81a4-96379d7edbdc",
+      "comment": "",
+      "command": "click",
+      "target": "id=gender",
+      "targets": [
+        ["id=gender", "id"],
+        ["css=#gender", "css:finder"],
+        ["xpath=//input[@id='gender']", "xpath:attributes"],
+        ["xpath=//form[@id='student_form']/div[4]/div/div[2]/div/div/div/div/span/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "061f2697-ccc2-424a-9f85-fd55db9e3811",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-select-item-option-active > .ant-select-item-option-content",
+      "targets": [
+        ["css=.ant-select-item-option-active > .ant-select-item-option-content", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "539a795e-f418-4fb9-864c-67d8404f5ecd",
+      "comment": "",
+      "command": "type",
+      "target": "id=avatar",
+      "targets": [],
+      "value": "/Users/riku/Documents/github/se-67-validation/testfile.jpeg"
+    }, {
+      "id": "f6891b44-421f-4c5b-b7bb-05175c2b46cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ant-btn-primary > span",
+      "targets": [
+        ["css=.ant-btn-primary > span", "css:finder"],
+        ["xpath=//form[@id='student_form']/div[8]/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3248237-41bc-452a-8e3b-f83f2ac430ce",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.ant-form-item-explain-error",
+      "targets": [
+        ["css=.ant-form-item-explain-error", "css:finder"],
+        ["xpath=//div[@id='student_form_student_id_help']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Please input the student ID!"
+    }]
+  }],
+  "suites": [{
+    "id": "ccad2ac5-01f8-48db-9f49-4c715ca4bbd8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8863cdc2-7743-462b-afca-bec348430035"]
+  }],
+  "urls": ["http://127.0.0.1:5173/"],
+  "plugins": []
+}
